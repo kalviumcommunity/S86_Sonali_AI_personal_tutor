@@ -16,6 +16,7 @@ Explain your answer step by step.
 Question: {question}
 """
 
+
 def build_one_shot_prompt(topic, question):
     """
     One-Shot: AI is given a single example to guide its response.
@@ -30,6 +31,7 @@ Example Q&A:
 
 Question: {question}
 """
+
 
 def build_multi_shot_prompt(topic, question):
     """
