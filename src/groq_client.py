@@ -50,6 +50,7 @@ Example Q&A:
 Question: {question}
 """
 
+
 def get_ai_response(prompt, stream=False):
     """
     Calls the Groq LLM with the provided prompt.
