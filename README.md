@@ -1,6 +1,6 @@
 
 
-# **AI Personal Tutor - 8 Concepts Version**
+# **AI Personal Tutor**
 
 ---
 
