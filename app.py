@@ -1,6 +1,12 @@
 import streamlit as st
 from src.groq_client import get_ai_response, build_zero_shot_prompt, build_one_shot_prompt, build_multi_shot_prompt
 
+# Streamlit page configuration
+st.set_page_config(
+    page_title="AI Personal Tutor",
+    page_icon=":books:",
+    layout="wide"
+)
 
 # Sidebar
 with st.sidebar:
