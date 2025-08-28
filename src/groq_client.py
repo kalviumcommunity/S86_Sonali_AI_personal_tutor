@@ -31,6 +31,25 @@ Example Q&A:
 Question: {question}
 """
 
+def build_multi_shot_prompt(topic, question):
+    """
+    Multi-Shot: AI is given multiple examples to guide its response.
+    """
+    return f"""
+You are an AI tutor. Answer the following {topic} question.
+Explain your answer step by step.
+
+Example Q&A:
+1) Q: What is the boiling point of water? 
+   A: 100°C at standard atmospheric pressure.
+2) Q: Who wrote 'Romeo and Juliet'? 
+   A: William Shakespeare.
+3) Q: What is the capital of France? 
+   A: Paris.
+
+Question: {question}
+"""
+
 def get_ai_response(prompt, stream=False):
     """
     Calls the Groq LLM with the provided prompt.
